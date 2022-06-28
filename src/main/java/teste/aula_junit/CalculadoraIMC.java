@@ -38,8 +38,8 @@ public class CalculadoraIMC
                 }
             }
         }
-        else if (idade > 20 && idade < 65) {
-            if (this.imc < 15.99) {
+        else if (idade >= 20 && idade <= 65) {
+            if (this.imc < 16.0) {
                 retorno = "Baixo peso muito grave";
             }
             if (this.imc > 16.0 && this.imc < 16.99) {
