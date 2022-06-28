@@ -38,7 +38,7 @@ public class CalculadoraIMC
                 }
             }
         }
-        else if (idade > 20 || idade < 65) {
+        else if (idade > 20 && idade < 65) {
             if (this.imc < 15.99) {
                 retorno = "Baixo peso muito grave";
             }
