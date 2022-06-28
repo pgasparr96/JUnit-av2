@@ -11,13 +11,13 @@ public class AppTest {
 	@Test
 	public void testeBaixoPesoMuitoGraveAdulto20() {
 		CalculadoraIMC calc = new CalculadoraIMC();
-		assertEquals("Baixo peso muito grave Adulto 20", calc.calcularImc(51.0, 1.79, 20, "m"));
+		assertEquals("Baixo peso muito grave", calc.calcularImc(51.0, 1.79, 20, "m"));
 	}
 	
 	@Test
 	public void testeBaixoPesoMuitoGraveAdulto65() {
 		CalculadoraIMC calc = new CalculadoraIMC();
-		assertEquals("Baixo peso muito grave Adulto 65", calc.calcularImc(51.0, 1.79, 65, "m"));
+		assertEquals("Baixo peso muito grave", calc.calcularImc(51.0, 1.79, 65, "m"));
 	}
 	
 	@Test
