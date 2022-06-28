@@ -75,7 +75,7 @@ public class CalculadoraIMC
                 else if (this.imc > 27.1 && this.imc < 32.0) {
                     retorno = "Sobrepeso";
                 }
-                else if (this.imc > 32.1 && this.imc < 47.0) {
+                else if (this.imc > 32.1 && this.imc < 37.0) {
                     retorno = "Obesidade grau 1";
                 }
                 else if (this.imc > 37.1 && this.imc < 41.9) {
