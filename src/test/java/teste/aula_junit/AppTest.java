@@ -11,13 +11,13 @@ public class AppTest {
 	@Test
 	public void testeBaixoPesoMuitoGraveAdulto20() {
 		CalculadoraIMC calc = new CalculadoraIMC();
-		assertEquals("Baixo peso muito grave Adulto 20", calc.calcularImc(51, 1.79, 20, "m"));
+		assertEquals("Baixo peso muito grave Adulto 20", calc.calcularImc(51.0, 1.79, 20, "m"));
 	}
 	
 	@Test
 	public void testeBaixoPesoMuitoGraveAdulto65() {
 		CalculadoraIMC calc = new CalculadoraIMC();
-		assertEquals("Baixo peso muito grave Adulto 65", calc.calcularImc(51, 1.79, 65, "m"));
+		assertEquals("Baixo peso muito grave Adulto 65", calc.calcularImc(51.0, 1.79, 65, "m"));
 	}
 	
 	@Test
@@ -181,13 +181,13 @@ public class AppTest {
 	@Test
 	public void testeBaixoPesoIdosa() {
 		CalculadoraIMC calc = new CalculadoraIMC();
-		assertEquals("Idosa Baixo Peso", calc.calcularImc(59, 1.64, 65, "f"));
+		assertEquals("Idosa Baixo Peso", calc.calcularImc(59.0, 1.64, 65, "f"));
 	}
 	
 	@Test
 	public void testePesoNormalIdosaLimiteMinimo() {
 		CalculadoraIMC calc = new CalculadoraIMC();
-		assertEquals("idosa Peso Normal", calc.calcularImc(55, 1.58, 65, "f"));
+		assertEquals("idosa Peso Normal", calc.calcularImc(55.0, 1.58, 65, "f"));
 	}
 	
 	@Test
