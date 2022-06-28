@@ -9,7 +9,7 @@ public class CalculadoraIMC
         this.imc = peso / (altura * altura);
         if (idade < 20) {
             retorno = "";
-            if (sexo.toUpperCase() == "m") {
+            if (sexo.toUpperCase().equals == "m") {
                 if (this.imc < 5.0) {
                     retorno = "Baixo peso";
                 }
@@ -23,7 +23,7 @@ public class CalculadoraIMC
                     retorno = "Obesidade";
                 }
             }
-            if (sexo.toUpperCase() == "f") {
+            if (sexo.toUpperCase().equals == "f") {
                 if (this.imc < 5.0) {
                     retorno = "Baixo peso";
                 }
@@ -65,7 +65,7 @@ public class CalculadoraIMC
             }
         }
         else if (idade > 65) {
-            if (sexo.toUpperCase() == "f") {
+            if (sexo.toUpperCase().equals == "f") {
                 if (this.imc < 21.9) {
                     retorno = "Baixo peso Grave";
                 }
@@ -85,7 +85,7 @@ public class CalculadoraIMC
                     retorno = "Obesidade grau 3";
                 }
             }
-            if (sexo.toUpperCase() == "m") {
+            if (sexo.toUpperCase.equals() == "m") {
                 if (this.imc < 21.9) {
                     retorno = "Baixo peso Grave";
                 }
