@@ -42,16 +42,16 @@ public class CalculadoraIMC
             if (this.imc < 16.0) {
                 retorno = "Baixo peso muito grave";
             }
-            if (this.imc >= 16.0 && this.imc < 16.99) {
+            if (this.imc >= 16.0 && this.imc < 17) {
                 retorno = "Baixo peso grave";
             }
             if (this.imc >= 17.0 && this.imc <= 18.49) {
                 retorno = "Peso baixo";
             }
-            else if (this.imc >= 18.50 && this.imc < 24.99) {
+            else if (this.imc >= 18.50 && this.imc <= 24.99) {
                 retorno = "Peso normal";
             }
-            else if (this.imc > 25.0 && this.imc < 29.99) {
+            else if (this.imc >= 25.0 && this.imc <= 29.99) {
                 retorno = "Sobrepeso";
             }
             else if (this.imc >= 30.0 && this.imc <= 34.99) {
@@ -60,25 +60,25 @@ public class CalculadoraIMC
             else if (this.imc < 34.99 && this.imc >= 39.99) {
                 retorno = "Obesidade grau 2";
             }
-            else if (this.imc >= 40.0) {
+            else if (this.imc > 39.99) {
                 retorno = "Obesidade grau 3";
             }
         }
         else if (idade > 65) {
             if (sexo.equals("f")) {
-                if (this.imc < 21.9) {
+                if (this.imc <= 21.9) {
                     retorno = "Baixo peso Grave";
                 }
-                else if (this.imc > 21.9 && this.imc < 27.0) {
+                else if (this.imc > 21.9 && this.imc < 27.1) {
                     retorno = "Peso normal";
                 }
-                else if (this.imc > 27.1 && this.imc < 32.0) {
+                else if (this.imc >= 27.1 && this.imc < 32.1) {
                     retorno = "Sobrepeso";
                 }
-                else if (this.imc > 32.1 && this.imc < 37.0) {
+                else if (this.imc >= 32.1 && this.imc < 37.1) {
                     retorno = "Obesidade grau 1";
                 }
-                else if (this.imc > 37.1 && this.imc < 41.9) {
+                else if (this.imc >= 37.1 && this.imc <= 41.9) {
                     retorno = "Obesidade grau 2";
                 }
                 else if (this.imc > 41.9) {
