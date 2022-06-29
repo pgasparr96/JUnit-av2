@@ -42,25 +42,25 @@ public class CalculadoraIMC
             if (this.imc < 16.0) {
                 retorno = "Baixo peso muito grave";
             }
-            if (this.imc > 16.0 && this.imc < 16.99) {
+            if (this.imc >= 16.0 && this.imc < 16.99) {
                 retorno = "Baixo peso grave";
             }
-            if (this.imc > 17.0 && this.imc < 18.49) {
+            if (this.imc >= 17.0 && this.imc <= 18.49) {
                 retorno = "Peso baixo";
             }
-            else if (this.imc > 18.5 && this.imc < 24.99) {
+            else if (this.imc >= 18.50 && this.imc < 24.99) {
                 retorno = "Peso normal";
             }
             else if (this.imc > 25.0 && this.imc < 29.99) {
                 retorno = "Sobrepeso";
             }
-            else if (this.imc > 30.0 && this.imc < 34.99) {
+            else if (this.imc >= 30.0 && this.imc <= 34.99) {
                 retorno = "Obesidade grau 1";
             }
-            else if (this.imc < 35.0 && this.imc > 34.99) {
+            else if (this.imc < 34.99 && this.imc >= 39.99) {
                 retorno = "Obesidade grau 2";
             }
-            else if (this.imc > 40.0) {
+            else if (this.imc >= 40.0) {
                 retorno = "Obesidade grau 3";
             }
         }
